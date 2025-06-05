@@ -3,7 +3,7 @@
 Template 2103 Central
 
 http://www.tooplate.com/view/2103-central
-	
+	tm-section-head
 */
 
 body {
@@ -47,7 +47,9 @@ p {
   box-shadow: 0px 0px 7px 0px rgba(214, 214, 214, 1);
   z-index: 1000;
 }
-
+.logo{
+  width: 50px;
+}
 .navbar {
   justify-content: flex-end;
 }
@@ -62,7 +64,7 @@ button:focus {
 }
 
 #top {
-  padding-top: 65px;
+  padding-top: 25px;
 }
 
 #tm-section-2,
@@ -156,7 +158,17 @@ button:focus {
   width: 96%;
   max-width: 1020px;
 }
-
+.tm-section-4 {
+  padding: 0px;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background-image: url(../img/segurida2.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  height: 300px;
+}
 .slick-dots {
   position: absolute;
   bottom: -50px;
@@ -565,5 +577,127 @@ a {
 @media (min-width: 1200px) {
   .container {
     max-width: 1310px;
+  }
+}
+
+
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .logo-text {
+      border-left: 1px solid #ccc;
+      padding-left: 10px;
+    }
+
+    .logo-text strong {
+      font-size: 16px;
+    }
+
+    .logo-text small {
+      font-size: 12px;
+      display: block;
+    }
+
+    /* Hamburguesa */
+    .menu-toggle {
+      font-size: 24px;
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+
+    /* Menú */
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      padding: 12px 0;
+      width: 100%;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      background-color: #f2f2f2;
+      color: #ff5e14;
+    }
+
+    /* Mostrar menú */
+    .nav-links.active {
+      display: flex;
+    }
+
+    /* Responsive: en desktop mostrar horizontal */
+    @media(min-width: 768px) {
+      .menu-toggle {
+        display: none;
+      }
+
+      .nav-links {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        box-shadow: none;
+        width: auto;
+      }
+
+      .nav-links a {
+        padding: 0 15px;
+      }
+    }
+
+    .close-menu {
+  align-self: flex-start;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #333;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+.services{
+  justify-content: center !important;
+}
+@media(min-width: 768px) {
+  .close-menu {
+    display: none;
+  }
+  .fit{
+display: flex !important;
+justify-content: center !important;
   }
 }
