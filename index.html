@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Central HTML Template</title>
     <!--
@@ -14,380 +13,587 @@
 	http://www.tooplate.com/view/2103-central
 
     -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400"
+    />
     <!-- Google web font "Open Sans" -->
-    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-    <link rel="stylesheet" href="css/tooplate-style.css">
+    <link rel="stylesheet" href="css/tooplate-style.css" />
     <!-- tooplate style -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link
+      rel="stylesheet"
+      href="http://anijs.github.io/lib/anicollection/anicollection.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script>
-        var renderPage = true;
+      var renderPage = true;
 
-        if (navigator.userAgent.indexOf('MSIE') !== -1
-            || navigator.appVersion.indexOf('Trident/') > 0) {
-            /* Microsoft Internet Explorer detected in. */
-            alert("Please view this in a modern browser such as Chrome or Microsoft Edge.");
-            renderPage = false;
-        }
+      if (
+        navigator.userAgent.indexOf("MSIE") !== -1 ||
+        navigator.appVersion.indexOf("Trident/") > 0
+      ) {
+        /* Microsoft Internet Explorer detected in. */
+        alert(
+          "Please view this in a modern browser such as Chrome or Microsoft Edge."
+        );
+        renderPage = false;
+      }
     </script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- Loader -->
-    <div id="loader-wrapper">
-        <div id="loader"></div>
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-    </div>
-  <header class="navbar">
-    <!-- Logo -->
-    <div class="logo-container">
-      <img src="./img/logo.jpeg" alt="Logo">
-      <div class="logo-text">
-        <strong>BeSafe</strong>
-        <small>Consultora HSE</small>
+    <!-- <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div> -->
+    <header class="navbar" data-anijs="if: click, do: flipInY animated">
+      <!-- Logo -->
+      <div class="logo-container">
+        <img src="./img/logo.jpeg" alt="Logo" class="imglogos" />
+        <div class="logo-text">
+          <strong >BeSafe</strong>
+          <small>Consultora HSE</small>
+        </div>
       </div>
-    </div>
 
-    <!-- Botón hamburguesa -->
-    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <!-- Botón hamburguesa -->
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
 
-    <!-- Menú -->
-    <nav class="nav-links" id="nav-links">
-       <button class="close-menu" id="close-menu">&times;</button>
-      <a href="#top">Home</a>
-      <a href="#tm-section-2">Info</a>
-      <a href="#tm-section-6">Contacto</a>
-    </nav>
-  </header>
-   <section id="tm-section-1" style="position: relative;">
-  <div class="col-lg-12 tm-slider-col" style="position: relative;">
-    <!-- Imagen de fondo -->
-    <img src="./img/segurida1.jpeg" alt="Imagen seguridad" style="width: 100%; height: 100vh; object-fit: cover;">
+      <!-- Menú -->
+      <nav class="nav-links" id="nav-links">
+        <button class="close-menu" id="close-menu">&times;</button>
+        <a href="#top">Inicio</a>
+        <a href="#tm-section-2">¿Quienes Somos?</a>
+        <a href="#tm-section-6">Nuestros servicios</a>
+        <a href="#tm-section-6">Contacto</a>
+      </nav>
+    </header>
+    <section id="tm-section-1" style="position: relative">
+      <div class="col-lg-12 tm-slider-col" style="position: relative">
+        <!-- Imagen de fondo -->
+        <img
+          src="./img/segurida1.jpeg"
+          alt="Imagen seguridad"
+          style="width: 100%; height: 100vh; object-fit: cover"
+        />
 
-    <!-- Capa oscura para mejorar contraste del texto -->
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);"></div>
+        <!-- Capa oscura para mejorar contraste del texto -->
+        <div
+          style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+          "
+        ></div>
 
-    <!-- Contenido centrado -->
-    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white; z-index: 2;">
-      <h1 style="font-size: 3rem; font-weight: bold;">Higiene y Seguridad</h1>
-      <p style="font-size: 1.25rem; margin-top: 10px;">Subtitulo</p>
-      <a href="https://wa.me/1234567890" target="_blank"
-         style="margin-top: 20px; display: inline-block; background-color: #3498db; color: white; padding: 12px 24px; border-radius: 6px; font-weight: bold; text-decoration: none;">
-        Contáctanos <i class="fab fa-whatsapp"></i>
-      </a>
-    </div>
-  </div>
-</section>
+        <!-- Contenido centrado -->
+        <div
+          style="
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            z-index: 2;
+          "
+        >
+ <h1
+  style="font-size: 3rem; font-weight: bold; text-align: center;"
+  
+  data-anijs="if: load, on: window, do: pulse animated">
+  Higiene y Seguridad
+</h1>
+          <p style="font-size: 1.25rem; margin-top: 10px">Subtitulo</p>
+          <a
+            href="https://wa.me/1234567890"
+            target="_blank"
+            style="
+              margin-top: 20px;
+              display: inline-block;
+              background-color: #3498db;
+              color: white;
+              padding: 12px 24px;
+              border-radius: 6px;
+              font-weight: bold;
+              text-decoration: none;
+            "
+            class="animate__animated animate__pulse animate__delay-1s animate__infinite"
+          >
+            <img
+              src="./img/icons8-whatsapp-50.png"
+              alt="WhatsApp"
+              style="
+                width: 30px;
+                height: 30px;
+                vertical-align: middle;
+                margin-right: 8px;
+                
+                
+              "
+              class="pulse animated"
+            />
+            Contáctanos
+          </a>
+        </div>
+      </div>
+    </section>
     <div class="container">
-         
+      <section
+        id="quienes-somos"
+        style="padding: 2rem; max-width: 800px; margin: auto"
+      >
+        <h2 
+          style="font-size: 2rem; font-weight: bold; margin-bottom: 1rem"
+          data-aos="fade-right"
+        >
+          ¿Quiénes somos?
+        </h2>
+        <p style="margin-bottom: 1rem" data-aos="fade-left">
+          Somos una consultora joven y experimentada, con una fuerte cultura de
+          seguridad.
+        </p>
+        <p style="margin-bottom: 1rem" data-aos="fade-right">
+          Nuestro equipo cuenta con amplia experiencia en la asesoría y gestión
+          de servicios de Seguridad, Higiene y Medio Ambiente, acompañando a
+          empresas Pymes de los sectores Oil & Gas, comercio e industria.
+        </p>
+        <p style="margin-bottom: 1rem" data-aos="fade-left">
+          Estamos convencidos que el éxito de cualquier organización va de la
+          mano de la seguridad, y que la pequeña y mediana empresa también puede
+          tener altos estándares de SSMA - HSE en sus procesos; y es por esto
+          que velamos y acompañamos a nuestros clientes en este camino.
+        </p>
+        <p data-aos="fade-right">
+          BE SAFE ofrece un servicio de prestaciones a todo tipo de empresas,
+          también a aquellas que según la normativa vigente, no están obligadas
+          a contar con un servicio mensual de Higiene y Seguridad, sin embargo,
+          esto no las exime de realizar algunas tareas obligatorias por ley.
+        </p>
+        <div class="textoseg">
+          <h2 style="text-align: center;">
+            ¿Por qué contratar un
+            <span class="resaltado">Servicio de seguridad e higiene?</span>
+          </h2>
+        </div>
+      </section>
+      <div class="contenedor-img div-img" data-aos="fade-up">
+        <img src="./img/seguridad1.jpeg" alt="" class="imgdelmedio" />
+        <div class="texto-superpuesto">
+          ¿Por qué contratar un
+          <span class="resaltado">servicio de seguridad e higiene</span>?
+        </div>
+      </div>
+      <section class="tm-section-2 tm-section-mb" id="tm-section-2">
+        <div class="row ">
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-lg-0 mb-md-5 mb-5 ">
+            <header class="text-center">
+              <i
+                class="fa fa-4x fa-heartbeat pl-5 pb-5 pr-5 pt-2"
+                style="color: #79c341"
+                data-aos="fade-right"
+              ></i>
+            </header>
+            <h2 style="color: #79c341; text-align: center; " data-aos="fade-right">
+              Protege la vida, minimiza riesgos y previene accidentes
+            </h2>
+            <p data-aos="zoom-in" style="text-align: justify;">
+              El activo más valioso con el que cuenta cualquier organización es
+              su gente. Sufrir un accidente o adquirir una enfermedad
+              profesional, cambia la vida del trabajador, de su familia, amigos
+              y compañeros de trabajo.
+            </p>
+          </div>
 
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-lg-0 mb-md-5 mb-5 ">
+            <header class="text-center">
+              <i
+                class="fa fa-4x fa-gavel pl-5 pb-5 pr-5 pt-2"
+                style="color: #e5005a"
+                data-aos="fade-right"
+              ></i>
+            </header>
+            <h2 style="color: #e5005a;text-align: center;" data-aos="fade-right">
+              Porque lo exige la ley
+            </h2>
+            <p data-aos="zoom-in" style="text-align: justify;">
+              Legalmente, la contratación de un servicio de Seguridad e Higiene
+              en el Trabajo por parte de los establecimientos, se dispone como
+              obligatorio en la Ley Nacional 19.587. El Decreto Reglamentario
+              351/79, modificado por el Decreto 1338/96, dispone que a los
+              efectos del cumplimiento del artículo 5° de dicha ley, los
+              establecimientos deberán contar, con carácter interno o externo
+              según la voluntad del empleador, con el Servicio de Higiene y
+              Seguridad en el Trabajo bajo la responsabilidad de graduados
+              universitarios, de acuerdo al detalle que se fija en los artículos
+              del Decreto 1338/96.
+            </p>
+          </div>
 
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-lg-0 mb-md-5 mb-5 ">
+            <header class="text-center">
+              <i
+                class="fa fa-4x fa-briefcase pl-5 pb-5 pr-5 pt-2"
+                style="color: #00b3f3"
+                data-aos="fade-right"
+              ></i>
+            </header>
+            <h2 style="color: #00b3f3" data-aos="fade-right">
+              Porque es un buen negocio
+            </h2>
+            <p data-aos="zoom-in">
+              Los costos que traen consigo los accidentes y/o enfermedades
+              profesionales, son sumamente altos para el capital de una empresa.
+              Los seguros pueden no pagar si se comprueba que no se han cumplido
+              las normas establecidas. En las visitas que habitualmente realizan
+              los representantes técnicos de las aseguradoras de riesgos en el
+              trabajo (ART) solicitan requisitos. El primero de ellos suele ser:
+              “contar con el Servicio de Seguridad e Higiene”. Con esto, la ART
+              se asegura de que la empresa cuente con las normas de Seguridad e
+              Higiene y Ud. se asegura una correcta cobertura. Con un servicio
+              de Seguridad e Higiene Ud. evita multas por falta de cumplimiento
+              y responsabilidad.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="tm-section-4 tm-section-mb" id="tm-section-4">
+        <div class="row"></div>
+      </section>
 
-<section id="quienes-somos" style="padding: 2rem; max-width: 800px; margin: auto;">
-  <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 1rem;">¿Quiénes somos?</h2>
-  <p style="margin-bottom: 1rem;">
-    Somos una consultora joven y experimentada, con una fuerte cultura de seguridad.
-  </p>
-  <p style="margin-bottom: 1rem;">
-    Nuestro equipo cuenta con amplia experiencia en la asesoría y gestión de servicios de Seguridad, Higiene y Medio Ambiente, acompañando a empresas Pymes de los sectores Oil & Gas, comercio e industria.
-  </p>
-  <p style="margin-bottom: 1rem;">
-    Estamos convencidos que el éxito de cualquier organización va de la mano de la seguridad, y que la pequeña y mediana empresa también puede tener altos estándares de SSMA - HSE en sus procesos; y es por esto que velamos y acompañamos a nuestros clientes en este camino.
-  </p>
-  <p>
-    BE SAFE ofrece un servicio de prestaciones a todo tipo de empresas, también a aquellas que según la normativa vigente, no están obligadas a contar con un servicio mensual de Higiene y Seguridad, sin embargo, esto no las exime de realizar algunas tareas obligatorias por ley.
-  </p>
-  <div class="textoseg">
-    <h2 >
-  ¿Por qué contratar un <span class="resaltado">Servicio de seguridad e higiene</span>?
-</h2>
-  </div>
-</section>
-   <img src="./img/img.jpeg" alt="" class='imgdelmedio'>
-        <section class="tm-section-2 tm-section-mb" id="tm-section-2">
-            
-        <div class="row">
-  <div class="col-xl-4 col-lg-4 col-md-6 mb-lg-0 mb-md-5 mb-5 pr-md-5">
-    <header class="text-center">
-      <i class="fa fa-4x fa-heartbeat pl-5 pb-5 pr-5 pt-2" style="color: #79C341;"></i>
-    </header>
-    <h2 style="color: #79C341;">Protege la vida, minimiza riesgos y previene accidentes</h2>
-    <p>El activo más valioso con el que cuenta cualquier organización es su gente. Sufrir un accidente o adquirir una enfermedad profesional, cambia la vida del trabajador, de su familia, amigos y compañeros de trabajo.</p>
-  </div>
-
-  <div class="col-xl-4 col-lg-4 col-md-6 mb-lg-0 mb-md-5 mb-5 pr-md-5">
-    <header class="text-center">
-      <i class="fa fa-4x fa-gavel pl-5 pb-5 pr-5 pt-2" style="color: #E5005A;"></i>
-    </header>
-    <h2 style="color: #E5005A;">Porque lo exige la ley</h2>
-    <p>Legalmente, la contratación de un servicio de Seguridad e Higiene en el Trabajo por parte de los establecimientos, se dispone como obligatorio en la Ley Nacional 19.587. El Decreto Reglamentario 351/79, modificado por el Decreto 1338/96, dispone que a los efectos del cumplimiento del artículo 5° de dicha ley, los establecimientos deberán contar, con carácter interno o externo según la voluntad del empleador, con el Servicio de Higiene y Seguridad en el Trabajo bajo la responsabilidad de graduados universitarios, de acuerdo al detalle que se fija en los artículos del Decreto 1338/96.</p>
-  </div>
-
-  <div class="col-xl-4 col-lg-4 col-md-6 mb-lg-0 mb-md-5 mb-5 pr-md-5">
-    <header class="text-center">
-      <i class="fa fa-4x fa-briefcase pl-5 pb-5 pr-5 pt-2" style="color: #00B3F3;"></i>
-    </header>
-    <h2 style="color: #00B3F3;">Porque es un buen negocio</h2>
-    <p>Los costos que traen consigo los accidentes y/o enfermedades profesionales, son sumamente altos para el capital de una empresa. Los seguros pueden no pagar si se comprueba que no se han cumplido las normas establecidas. En las visitas que habitualmente realizan los representantes técnicos de las aseguradoras de riesgos en el trabajo (ART) solicitan requisitos. El primero de ellos suele ser: “contar con el Servicio de Seguridad e Higiene”. Con esto, la ART se asegura de que la empresa cuente con las normas de Seguridad e Higiene y Ud. se asegura una correcta cobertura. Con un servicio de Seguridad e Higiene Ud. evita multas por falta de cumplimiento y responsabilidad.</p>
-  </div>
-</div>
-        </section>
-  <section class="tm-section-4 tm-section-mb" id="tm-section-4">
-            <div class="row">
-
-            </div>
-        </section>
-       
       <section class="tm-section-5" id="tm-section-5">
-        <h2 style="text-align: center; padding: 20px;">Nuestros <span style="color:#00B3F3">servicios</span> </h2>
-  <div class="row services">
-    <!-- Columna izquierda con imagen -->
-   
+      <h2 
+          style="font-size: 2rem; font-weight: bold; margin-bottom: 5rem"
+          data-aos="fade-right"
+        >
+          Nuestros servicios.
+        </h2>
+        <div class="row services">
+          <!-- Columna izquierda con imagen -->
 
-    <!-- Columna derecha con los servicios -->
-    <div class="col-lg-8 col-md-12 col-sm-12 pl-lg-0">
-      <div class="media tm-media">
-       <img src="./img/seguri3.jpeg" alt="" style="width: 300px;">
-        <div class="media-body tm-box-5">
-          <h2>Seguridad operativa</h2>
-          <p class="mb-0">Supervisión de seguridad permanente en obras y trabajos con riesgos especiales, incluyendo industria del petróleo y vehículos.</p>
-        </div>
-      </div>
-
-      <div class="media tm-media">
-      <img src="./img/capac.jpg" alt="" style="width: 300px;">
-        <div class="media-body tm-box-5">
-          <h2>Capacitaciones</h2>
-          <ul class="mb-0 ps-3">
-            <li>Primeros auxilios y RCP</li>
-            <li>Ruidos, vibraciones y riesgos eléctricos</li>
-            <li>Uso de EPP y cargas térmicas</li>
-            <li>Seguridad vial y manejo defensivo</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="media tm-media">
-     <img src="./img/inves.jpg" alt="" style="width: 300px;">
-        <div class="media-body tm-box-5">
-          <h2>Investigación y Estadísticas</h2>
-          <p class="mb-0">Detección de causas de accidentes y elaboración de indicadores para orientar acciones preventivas.</p>
-        </div>
-      </div>
-
-      <div class="media tm-media">
- <img src="./img/conservacion-ambiental-en-el-jardin-para-ninos.jpg" alt="" style="width: 300px;">
-        <div class="media-body tm-box-5">
-          <h2>Medio ambiente</h2>
-          <p class="mb-0">Gestión ambiental, residuos, informes técnicos y cumplimiento de normativas ambientales vigentes.</p>
-        </div>
-      </div>
-
-      <div class="media tm-media">
-        <i class="fas fa-flask fa-2x me-3" style="color: #EB2C82;"></i>
-        <div class="media-body tm-box-5">
-          <h2>Productos químicos</h2>
-          <p class="mb-0">Auditorías y evaluación de seguridad en depósitos de químicos. Requisitos del SGA y cumplimiento legal.</p>
-        </div>
-      </div>
-
-      <div class="media tm-media">
-        <i class="fas fa-fire-extinguisher fa-2x me-3" style="color: #00B3F3;"></i>
-        <div class="media-body tm-box-5">
-          <h2>Protección contra incendios</h2>
-          <p class="mb-0">Diseño, instalación y mantenimiento de sistemas de protección contra incendios en instalaciones y redes.</p>
-        </div>
-      </div>
-
-      <div class="media tm-media">
-        <i class="fas fa-ruler-combined fa-2x text-success me-3"></i>
-        <div class="media-body tm-box-5">
-          <h2>Estudios y Mediciones</h2>
-          <ul class="ps-3 mb-0">
-            <li>Iluminación – Res 84/12</li>
-            <li>Ruido – Res 85/12</li>
-            <li>Medición de contaminantes químicos – Res 861/15</li>
-            <li>Estudios ergonómicos – Res 886/15</li>
-            <li>Mediciones termográficas en tableros eléctricos</li>
-            <li>Medición de gases para ingreso a espacios confinados</li>
-            <li>Medición de carga térmica – Res 295/03</li>
-            <li>Medición de ventilación – Res 295/03</li>
-            <li>Estudios de vibraciones en puestos de trabajo – Res 295/03</li>
-            <li>Estudios de campos electromagnéticos – Res 295/03</li>
-            <li>Estudios de ergonomía laboral – Res SRT 886/15</li>
-            <li>Memorias de Incendios para habilitaciones comerciales</li>
-            <li>Conservador de Incendios (Ord. 9339/01 - aplicable a Neuquén capital)</li>
-            <li>Programas de seguridad en la construcción – Decreto 911/96, Res SRT 231/96, Res SRT 519/97, Res SRT 35/98, Res SRT 319/99</li>
-            <li>Análisis de agua de consumo</li>
-          </ul>
-        </div>
-      </div>
-      
-    </div>
-    
-  </div>
-</section>
-
-<section class="clientes-section" style="text-align: center; padding: 50px 20px; background-color: #f9f9f9;">
-  <h2 style="font-size: 2.5em; margin-bottom: 30px; color: #333;">Nuestros <span style="color: #00B3F3;"> clientes</span></h2>
-  <img src="./img/clientes.jpeg" alt="Logos de nuestros clientes" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-</section>
-        <section class="tm-section-6" id="tm-section-6">
-           <h2 class="mb-4">Contáctanos</h2>
-            <div class="row">
-                <div class="col-lg-7 col-md-7 col-xs-12">
-                    <div class="contact_message">
-                        <form action="" method="post" class="contact-form">
-                            <div class="row mb-2">
-                                <div class="form-group col-xl-6">
-                                    <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Nombre" required/>
-                                </div>
-                                <div class="form-group col-xl-6 pl-xl-1">
-                                    <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email" required/>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <textarea id="contact_message" name="contact_message" class="form-control" rows="6" placeholder="Consulta" required></textarea>
-                            </div>
-                            <button type="submit" class="btn  tm-btn-submit float-right btn-big">Enviar</button>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="col-lg-5 col-md-5 col-xs-12 tm-contact-right">
-                    <div class="tm-address-box">
-                       
-                       
-                    </div>
-                </div>
+          <!-- Columna derecha con los servicios -->
+          <div class="col-lg-8 col-md-12 col-sm-12 pl-lg-0">
+            <div class="media tm-media" data-aos="fade-left">
+              <img src="./img/seguri3.jpeg" alt="" style="width: 300px" />
+              <div class="media-body tm-box-5">
+                <h2>Seguridad operativa</h2>
+                <p class="mb-0">
+                  Supervisión de seguridad permanente en obras y trabajos con
+                  riesgos especiales, incluyendo industria del petróleo y
+                  vehículos.
+                </p>
+              </div>
             </div>
-        </section>
-    
+
+            <div class="media tm-media" data-aos="fade-right">
+              <img src="./img/capac.jpg" alt="" style="width: 300px" />
+              <div class="media-body tm-box-5">
+                <h2>Capacitaciones</h2>
+                <ul class="mb-0 ps-3">
+                  <li>Primeros auxilios y RCP</li>
+                  <li>Ruidos, vibraciones y riesgos eléctricos</li>
+                  <li>Uso de EPP y cargas térmicas</li>
+                  <li>Seguridad vial y manejo defensivo</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="media tm-media" data-aos="fade-left">
+              <img src="./img/inves.jpg" alt="" style="width: 300px" />
+              <div class="media-body tm-box-5">
+                <h2>Investigación y Estadísticas</h2>
+                <p class="mb-0">
+                  Detección de causas de accidentes y elaboración de indicadores
+                  para orientar acciones preventivas.
+                </p>
+              </div>
+            </div>
+
+            <div class="media tm-media" data-aos="fade-right">
+              <img
+                src="./img/conservacion-ambiental-en-el-jardin-para-ninos.jpg"
+                alt=""
+                style="width: 300px"
+              />
+              <div class="media-body tm-box-5">
+                <h2>Medio ambiente</h2>
+                <p class="mb-0">
+                  Gestión ambiental, residuos, informes técnicos y cumplimiento
+                  de normativas ambientales vigentes.
+                </p>
+              </div>
+            </div>
+
+            <div class="media tm-media" data-aos="fade-left">
+              <img src="./img/quimicos.jpg" alt="" style="width: 300px" />
+              <div class="media-body tm-box-5">
+                <h2>Productos químicos</h2>
+                <p class="mb-0">
+                  Auditorías y evaluación de seguridad en depósitos de químicos.
+                  Requisitos del SGA y cumplimiento legal.
+                </p>
+              </div>
+            </div>
+
+            <div class="media tm-media" data-aos="fade-right">
+               <img src="./img/bombero.jpeg" alt="" style="width: 300px" />
+              <div class="media-body tm-box-5">
+                <h2>Protección contra incendios</h2>
+                <p class="mb-0">
+                  Diseño, instalación y mantenimiento de sistemas de protección
+                  contra incendios en instalaciones y redes.
+                </p>
+              </div>
+            </div>
+
+            <div class="media tm-media" data-aos="fade-left">
+              <img src="./img/medicion.jpg" alt="" style="width: 300px" />
+              <div class="media-body tm-box-5">
+                <h2>Estudios y Mediciones</h2>
+                <ul class="ps-3 mb-0">
+                  <li>Iluminación – Res 84/12</li>
+                  <li>Ruido – Res 85/12</li>
+                  <li>Medición de contaminantes químicos – Res 861/15</li>
+                  <li>Estudios ergonómicos – Res 886/15</li>
+                  <li>Mediciones termográficas en tableros eléctricos</li>
+                  <li>Medición de gases para ingreso a espacios confinados</li>
+                  <li>Medición de carga térmica – Res 295/03</li>
+                  <li>Medición de ventilación – Res 295/03</li>
+                  <li>
+                    Estudios de vibraciones en puestos de trabajo – Res 295/03
+                  </li>
+                  <li>Estudios de campos electromagnéticos – Res 295/03</li>
+                  <li>Estudios de ergonomía laboral – Res SRT 886/15</li>
+                  <li>Memorias de Incendios para habilitaciones comerciales</li>
+                  <li>
+                    Conservador de Incendios (Ord. 9339/01 - aplicable a Neuquén
+                    capital)
+                  </li>
+                  <li>
+                    Programas de seguridad en la construcción – Decreto 911/96,
+                    Res SRT 231/96, Res SRT 519/97, Res SRT 35/98, Res SRT
+                    319/99
+                  </li>
+                  <li>Análisis de agua de consumo</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     
+      <section class="tm-section-6" id="tm-section-6">
+        <h2 class="mb-4">Contáctanos</h2>
+        <div class="row">
+          <div class="col-lg-7 col-md-7 col-xs-12">
+            <div class="contact_message">
+              <form action="" method="post" class="contact-form">
+                <div class="row mb-2">
+                  <div class="form-group col-xl-6">
+                    <input
+                      type="text"
+                      id="contact_name"
+                      name="contact_name"
+                      class="form-control"
+                      placeholder="Nombre"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-xl-6 pl-xl-1">
+                    <input
+                      type="email"
+                      id="contact_email"
+                      name="contact_email"
+                      class="form-control"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <textarea
+                    id="contact_message"
+                    name="contact_message"
+                    class="form-control"
+                    rows="6"
+                    placeholder="Consulta"
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn tm-btn-submit float-right btn-big"
+                >
+                  Enviar
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-5 col-xs-12 tm-contact-right">
+            <div class="tm-address-box"></div>
+          </div>
+        </div>
+      </section>
     </div>
- <footer class="mt-5" style="background-color: #000000; color: white; padding: 20px 0; text-align: center;">
-  <p style="margin: 0; font-size: 1.2em;"><strong>BeSafe Consultora HSE</strong></p>
-  <p style="margin: 5px 0;">Cel: (0299) 299 6078515</p>
-  <p style="margin: 5px 0;">consultorabesafe@gmail.com</p>
-  <p style="margin: 5px 0;">
-    <a href="http://www.besafe.com.ar" style="color: #fff; text-decoration: underline;">www.besafe.com</a>
-  </p>
-</footer>
+    <footer
+      class="mt-5"
+      style="
+        background-color: #000000;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      "
+    >
+      <p style="margin: 0; font-size: 1.2em">
+        <strong>BeSafe Consultora HSE</strong>
+      </p>
+      <p style="margin: 5px 0">Cel: (0299) 299 6078515</p>
+      <p style="margin: 5px 0">consultorabesafe@gmail.com</p>
+      <p style="margin: 5px 0">
+        <a
+          href="http://www.besafe.com.ar"
+          style="color: #fff; text-decoration: underline"
+          >www.besafe.com</a
+        >
+      </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/anijs@0.9.3/dist/anijs-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/anijs@0.9.3/dist/anijs-helper-scrollreveal-min.js"></script>
     <!-- load JS files -->
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/popper.min.js"></script>
     <!-- https://popper.js.org/ -->
     <script src="js/bootstrap.min.js"></script>
     <!-- https://getbootstrap.com/ -->
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <!-- Slick Carousel -->
-
+     
+    <script src="anijs-min.js"></script>
     <script>
-        function setCarousel() {
-            var slider = $('.tm-img-slider');
+      AOS.init();
+      function setCarousel() {
+        var slider = $(".tm-img-slider");
 
-            if (slider.hasClass('slick-initialized')) {
-                slider.slick('destroy');
-            }
-
-            if ($(window).width() > 991) {
-                // Slick carousel
-                slider.slick({
-                    autoplay: true,
-                    fade: true,
-                    speed: 800,
-                    infinite: true,
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                });
-            } else {
-                slider.slick({
-                    autoplay: true,
-                    fade: true,
-                    speed: 800,
-                    infinite: true,
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                });
-            }
+        if (slider.hasClass("slick-initialized")) {
+          slider.slick("destroy");
         }
 
-        $(document).ready(function () {
-            if (renderPage) {
-                $('body').addClass('loaded');
-            }
+        if ($(window).width() > 991) {
+          // Slick carousel
+          slider.slick({
+            autoplay: true,
+            fade: true,
+            speed: 800,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          });
+        } else {
+          slider.slick({
+            autoplay: true,
+            fade: true,
+            speed: 800,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          });
+        }
+      }
 
-            setCarousel();
+      $(document).ready(function () {
+        if (renderPage) {
+          $("body").addClass("loaded");
+        }
 
-            $(window).resize(function () {
-                setCarousel();
-            });
+        setCarousel();
 
-            // Close menu after link click
-            $('.nav-link').click(function () {
-                $('#mainNav').removeClass('show');
-            });
-
-            // https://css-tricks.com/snippets/jquery/smooth-scrolling/
-            // Select all links with hashes
-            $('a[href*="#"]')
-                // Remove links that don't actually link to anything
-                .not('[href="#"]')
-                .not('[href="#0"]')
-                .click(function (event) {
-                    // On-page links
-                    if (
-                        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-                        &&
-                        location.hostname == this.hostname
-                    ) {
-                        // Figure out element to scroll to
-                        var target = $(this.hash);
-                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                        // Does a scroll target exist?
-                        if (target.length) {
-                            // Only prevent default if animation is actually gonna happen
-                            event.preventDefault();
-                            $('html, body').animate({
-                                scrollTop: target.offset().top + 1
-                            }, 1000, function () {
-                                // Callback after animation
-                                // Must change focus!
-                                var $target = $(target);
-                                $target.focus();
-                                if ($target.is(":focus")) { // Checking if the target was focused
-                                    return false;
-                                } else {
-                                    $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                                    $target.focus(); // Set focus again
-                                };
-                            });
-                        }
-                    }
-                });
+        $(window).resize(function () {
+          setCarousel();
         });
+
+        // Close menu after link click
+        $(".nav-link").click(function () {
+          $("#mainNav").removeClass("show");
+        });
+
+        // https://css-tricks.com/snippets/jquery/smooth-scrolling/
+        // Select all links with hashes
+        $('a[href*="#"]')
+          // Remove links that don't actually link to anything
+          .not('[href="#"]')
+          .not('[href="#0"]')
+          .click(function (event) {
+            // On-page links
+            if (
+              location.pathname.replace(/^\//, "") ==
+                this.pathname.replace(/^\//, "") &&
+              location.hostname == this.hostname
+            ) {
+              // Figure out element to scroll to
+              var target = $(this.hash);
+              target = target.length
+                ? target
+                : $("[name=" + this.hash.slice(1) + "]");
+              // Does a scroll target exist?
+              if (target.length) {
+                // Only prevent default if animation is actually gonna happen
+                event.preventDefault();
+                $("html, body").animate(
+                  {
+                    scrollTop: target.offset().top + 1,
+                  },
+                  1000,
+                  function () {
+                    // Callback after animation
+                    // Must change focus!
+                    var $target = $(target);
+                    $target.focus();
+                    if ($target.is(":focus")) {
+                      // Checking if the target was focused
+                      return false;
+                    } else {
+                      $target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
+                      $target.focus(); // Set focus again
+                    }
+                  }
+                );
+              }
+            }
+          });
+      });
     </script>
 
-  <script>
-   
-const toggle = document.getElementById('menu-toggle');
-const nav = document.getElementById('nav-links');
-const close = document.getElementById('close-menu');
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const nav = document.getElementById("nav-links");
+      const close = document.getElementById("close-menu");
 
-toggle.addEventListener('click', () => {
-  nav.classList.toggle('active');
-});
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
 
-close.addEventListener('click', () => {
-  nav.classList.remove('active');
-});
-    
-  </script>
-</body>
-
+      close.addEventListener("click", () => {
+        nav.classList.remove("active");
+      });
+    </script>
+  </body>
 </html>
