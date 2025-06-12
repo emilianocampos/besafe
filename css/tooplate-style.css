@@ -458,7 +458,14 @@ a {
 .no-js #loader-wrapper {
   display: none;
 }
-
+@media screen and (max-width: 1200px) {
+  .tm-media {
+    flex-direction: column;
+  }
+  .navbar {
+    padding: 0;
+  }
+}
 @media screen and (max-width: 1199px) {
   .tm-2col-l {
     padding-right: 30px;
@@ -466,6 +473,20 @@ a {
   .tm-2col-r {
     padding-left: 30px;
   }
+  .texto-superpuesto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el texto */
+  width: 100%; /* Para que ocupe todo el ancho de la imagen */
+  text-align: center;
+  color: white;
+  font-size: 2rem !important; /* Tamaño grande, ajustable */
+  font-weight: bold;
+  white-space: nowrap; /* Evita que el texto se corte en dos líneas */
+  padding: 0 1rem; /* Espacio a los costados si lo necesitás */
+text-shadow: 3px 3px 3px black;
+}
 }
 
 @media screen and (max-width: 991px) {
@@ -505,7 +526,20 @@ a {
     top: 90px;
     right: 30px;
   }
-
+  .texto-superpuesto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el texto */
+  width: 100%; /* Para que ocupe todo el ancho de la imagen */
+  text-align: center;
+  color: white;
+  font-size: 2.7rem; /* Tamaño grande, ajustable */
+  font-weight: bold;
+  white-space: nowrap; /* Evita que el texto se corte en dos líneas */
+  padding: 0 1rem; /* Espacio a los costados si lo necesitás */
+text-shadow: 3px 3px 3px black;
+}
   .tm-2col-l {
     padding-right: 15px;
   }
@@ -553,6 +587,7 @@ a {
     left: 0;
     bottom: 0;
   }
+  
 .imgdelmedio {
   display: none;
   width: 70%;
@@ -578,6 +613,9 @@ a {
   .navbar {
     padding: 0;
   }
+  .nav-links {
+ display: none;
+}
 }
 
 @media (min-width: 768px) {
@@ -730,30 +768,28 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  
-  color: white;
-  padding: 15px 25px;
-  font-size: 1.5em;
-  font-weight: bold;
+  transform: translate(-50%, -50%); /* Centra el texto */
+  width: 100%; /* Para que ocupe todo el ancho de la imagen */
   text-align: center;
-  border-radius: 10px;
-  max-width: 90%;
-  
-  text-shadow: 1px 1px 2px black; /* Borde negro suave */
+  color: white;
+  font-size: 2.7rem; /* Tamaño grande, ajustable */
+  font-weight: bold;
+  white-space: nowrap; /* Evita que el texto se corte en dos líneas */
+  padding: 0 1rem; /* Espacio a los costados si lo necesitás */
+text-shadow: 3px 3px 3px black;
 }
 
-/* Color específico para parte del texto */
 .texto-superpuesto .resaltado {
-  color: #3498db;
+  color:#3498db; /* Color llamativo para el texto resaltado */
 }
+
 
 @media(min-width: 768px) {
   .close-menu {
     display: none;
   }
   
-  
+
   .fit{
 display: flex !important;
 justify-content: center !important;
@@ -809,3 +845,42 @@ justify-content: center !important;
   -webkit-animation-name: pulse;
   animation-name: pulse
 }
+
+
+.nav-links {
+  display: flex;
+  flex-direction: row; /* Los links uno al lado del otro */
+  align-items: center;
+  justify-content: center; /* Opcional: centra el grupo de links */
+  gap: 2rem; /* Espacio entre los enlaces, ajustá según te guste */
+  background-color: white;
+  position: relative; /* Podés cambiarlo de absolute si no necesitás menú móvil */
+  top: 0;
+  right: 0;
+
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  white-space: nowrap; /* Esto evita que el texto como "¿Quiénes Somos?" se divida en dos líneas */
+}
+
+.close-menu {
+  display: none; /* Ocultamos la "X" si no es un menú móvil */
+}
+.contenedor-img {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.imgdelmedio {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
