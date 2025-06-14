@@ -418,7 +418,27 @@ a {
 #loader-wrapper .loader-section.section-right {
   right: 0;
 }
+.nav-links {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center; 
+  gap: 2rem; 
+  background-color: white;
+  position: relative; 
+  top: 0;
+  right: 0;
 
+  padding: 1rem 0;
+
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  white-space: nowrap; /* Esto evita que el texto como "¿Quiénes Somos?" se divida en dos líneas */
+}
 /* Loaded */
 .loaded #loader-wrapper .loader-section.section-left {
   -webkit-transform: translateX(-100%); /* Chrome, Opera 15+, Safari 3.1+ */
@@ -864,27 +884,7 @@ justify-content: center !important;
 }
 
 
-.nav-links {
-  display: flex;
-  flex-direction: row; /* Los links uno al lado del otro */
-  align-items: center;
-  justify-content: center; /* Opcional: centra el grupo de links */
-  gap: 2rem; /* Espacio entre los enlaces, ajustá según te guste */
-  background-color: white;
-  position: relative; /* Podés cambiarlo de absolute si no necesitás menú móvil */
-  top: 0;
-  right: 0;
 
-  padding: 1rem 0;
-
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: black;
-  font-weight: 500;
-  white-space: nowrap; /* Esto evita que el texto como "¿Quiénes Somos?" se divida en dos líneas */
-}
 
 .close-menu {
   display: none; /* Ocultamos la "X" si no es un menú móvil */
