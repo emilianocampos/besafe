@@ -590,6 +590,9 @@ text-shadow: 3px 3px 3px black;
   .tm-address-box {
     margin-bottom: 50px;
   }
+  .tarjetas{
+    display: none !important;
+  }
   .tm-page-4-content {
     margin-bottom: 50px;
   }
