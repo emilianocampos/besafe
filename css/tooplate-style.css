@@ -914,8 +914,8 @@ justify-content: center !important;
   justify-content: center;
   background-color: #25d366;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 55px;
+  height: 55px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
